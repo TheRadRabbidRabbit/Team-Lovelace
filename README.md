@@ -3,15 +3,13 @@
 
 ## Table of Contents
 1. [Contributors](https://github.com/TheRadRabbidRabbit/Team-Lovelace#contributors)
-2. [Pair Share Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#pair-share-journals)
+2. [Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#journals)
 4. [Project Description](https://github.com/TheRadRabbidRabbit/Team-Lovelace#project-description)
 5. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
 
 ## Project Description
 ### TBD
 ![Website Home Page](TBD)
-
-## Project Ideation
 
 ### TBD
 
