@@ -11,5 +11,30 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/allie")
+def allie():
+    return render_template("allie.html")
+
+
+@app.route("/gabriel")
+def gabriel():
+    return render_template("gabriel.html")
+
+
+@app.route("/justin")
+def justin():
+    return render_template("justin.html")
+
+
+@app.route("/rebecca")
+def rebecca():
+    return render_template("rebecca.html")
+
+
+@app.route("/tianbin")
+def tianbin():
+    return render_template("tianbin.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
