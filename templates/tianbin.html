@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tianbin</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/video_style.css">
+</head>
+
+<body>
+<div id="video_wrapper">
+    <video autoplay muted loop>
+        <source src="/static/assets/tianbin.mp4" type="video/mp4">
+    </video>
+
+    <div id="wrapper">
+        <h1>Hi, I'm Tianbin</h1>
+        <form>
+            <input type="button" value="Go back!" onclick="history.back()">
+        </form>
+        <button onClick="window.location.reload();">Revert</button>
+        <button onclick="jokes()">Random Jokes</button>
+        <h1 id="favorDisplay"></h1>
+        <img width="400" height="225" src= "/static/assets/individ_photos/Tianbin.jpg" alt="">
+        <h1>I'm studying in Del Norte. I like playing video game and soccer. My goal in this class is to make a website with our team.</h1>
+        <script>
+            var joke = [
+                'Why was Harry Potter such a good computer programmer? ' +
+                'A: Because he spoke python.',
+                'I wanted to be a better computer programmer so I decided to slowly improve my binary skills' +
+                'A: You could say I improved bit by bit',
+                'How does the computer programmer potty train his son?' +
+                'A: Ctrl+P',
+                'Your annual reminder that computer programmers cannot tell Christmas from Halloween' +
+                'A: because DEC(25) = OCT(31)',
+            ]
+            function jokes() {
+                var x = Math.floor(Math.random() * (joke.length));
+                document.getElementById('favorDisplay').innerHTML = joke[x];
+            }
+        </script>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

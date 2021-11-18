@@ -1,0 +1,41 @@
+body
+{
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+    padding:0px;
+    font-family:helvetica;
+}
+#video_wrapper
+{
+    margin:0px;
+    padding:0px;
+}
+#video_wrapper video
+{
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+#wrapper
+{
+    position:relative;
+    text-align:center;
+    margin:0 auto;
+    padding:0px;
+    width:995px;
+    z-index:2;
+}
+h1
+{
+    margin-top:250px;
+    color:white;
+    font-size:45px;
+    background-color: rgba(112, 112, 112, 0.74);
+}
+
