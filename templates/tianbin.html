@@ -22,7 +22,8 @@
         <button onClick="window.location.reload();">Revert</button>
         <button onclick="jokes()">Random Jokes</button>
         <h1 id="favorDisplay"></h1>
-        <img width="400" height="225" src= "/static/assets/individ_photos/Tianbin.jpg" alt="">
+        <img width="400" height="225" id="myImage" alt="" src="/static/assets/individ_photos/Tianbin.jpg">
+        <button onclick="image()">switch</button>
         <h1>I'm studying in Del Norte. I like playing video game and soccer. My goal in this class is to make a website with our team.</h1>
         <script>
             var joke = [
@@ -38,6 +39,9 @@
             function jokes() {
                 var x = Math.floor(Math.random() * (joke.length));
                 document.getElementById('favorDisplay').innerHTML = joke[x];
+            }
+            function image() {
+                document.getElementById('myImage').src="/static/assets/individ_photos/Tianbin2.jpg";
             }
         </script>
     </div>
