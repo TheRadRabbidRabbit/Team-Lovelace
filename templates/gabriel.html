@@ -1,17 +1,33 @@
 {% set project = "Gabriel" %}
 
 <script>
-
+    let a = 0
+    function maskswitch(){
+        const pic1 ="static/assets/Pic2.jpg"
+        const pic2 ="static/assets/Pic1.jpg"
+        if (a === 0){
+            document.getElementById('mask').src = pic1;
+            a = 1
+        }
+        else {
+            document.getElementById('mask').src = pic2;
+            a = 0
+        }
+    }
 </script>
-
 {% block body %}
 <body style="background-color: dodgerblue">
 <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large">
     <div class="col-12">
         <p>Hi! I'm Gabriel Boudreau</p>
     </div>
+    <div id="imgswap">
+        <img src=""
+             id="mask"
+        />
+    </div>
     <div>
-
+        <input type="button" value="Mask" onclick="maskswitch();"/>
     </div>
 </div>
 {% endblock %}
