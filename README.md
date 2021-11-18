@@ -26,7 +26,7 @@
 
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
-### Company policies 
+### Commit policies 
 - Every commit should be tied to a Scrum board issue
 - Everyone adds their own commits to their tickets
 - Everyone should have at least one assigned task each week
