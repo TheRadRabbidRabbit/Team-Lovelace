@@ -26,6 +26,14 @@
 
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
+### Company policies 
+- Every commit should be tied to a Scrum board issue
+- Everyone adds their own commits to their tickets
+- Everyone should have at least one assigned task each week
+- Everyone adds their ideas to the wiki/readme
+- Pull before you push any code
+- Pull frequently (at least once a day)
+
 #### Progress
 |Name     | Task                  | Link to ticket | Commit |
 |:--------| :---------------------| :--------------| :------|
@@ -34,3 +42,4 @@
 |Justin |
 |Rebecca|
 |Tianbin|
+
