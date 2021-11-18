@@ -23,7 +23,7 @@
 | Tianbin Liu |[@TianbinLiu](https://github.com/TianbinLiu)| [Tasks](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+assignee%3TianbinLiu) |[Scrum Board](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1?card_filter_query=assignee%3TianbinLiu)| [Commits](https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=TianbinLiu)|
 
 ## Journals
-
+[Tianbin](https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing)
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
 ### Commit policies 
