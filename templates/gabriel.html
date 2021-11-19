@@ -13,6 +13,15 @@
             a = 0
         }
     }
+    //code templated from tianbin
+    let answer = [
+        ""
+    ]
+    function api() {
+        let b = Math.floor(Math.random() * (answer.length));
+        document.getElementById('apiDisplay').innerHTML = answer[b];
+    }
+
 </script>
 {% block body %}
 <body style="background-color: dodgerblue">
@@ -24,9 +33,11 @@
         <img src=""
              id="mask"
         />
+        <h1 id="apiDisplay"></h1>
     </div>
     <div>
         <input type="button" value="Mask" onclick="maskswitch();"/>
+        <input type="button" value="API" onclick="api();"/>
     </div><div></div>
     <a href="https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing">Journal</a>
 </div>
