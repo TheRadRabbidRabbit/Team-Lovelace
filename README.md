@@ -24,6 +24,7 @@
 
 ## Journals
 [Tianbin](https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing)
+[Gabriel](https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing)
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
 ### Commit policies 
