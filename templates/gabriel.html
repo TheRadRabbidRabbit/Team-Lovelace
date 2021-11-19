@@ -1,5 +1,4 @@
 {% set project = "Gabriel" %}
-{% extends "layout.html" %}
 <script>
     let a = 0
     function maskswitch(){
@@ -10,9 +9,16 @@
             a = 1
         }
         else {
-            document.getElementById('mask').src = pic2;
+            document.getElementById('factDisplay').src = pic2;
             a = 0
         }
+    }
+    let api = [
+
+    ]
+    function api() {
+        let b = Math.floor(Math.random() * (api.length));
+        document.getElementById('favorDisplay').innerHTML = api[b];
     }
 </script>
 {% block body %}
@@ -25,9 +31,11 @@
         <img src=""
              id="mask"
         />
+        <h1 id="factDisplay"></h1>
     </div>
     <div>
         <input type="button" value="Mask" onclick="maskswitch();"/>
+        <input type="button" value="API" onclick="api();"/>
     </div><div></div>
     <a href="https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing">Journal</a>
 </div>
