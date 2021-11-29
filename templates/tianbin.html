@@ -13,17 +13,18 @@
     <video autoplay muted loop>
         <source src="/static/assets/tianbin.mp4" type="video/mp4">
     </video>
-
+    https://drive.google.com/uc?export=view&id=XXX
     <div id="wrapper">
         <h1>Hi, I'm Tianbin</h1>
         <form>
             <input type="button" value="Go back!" onclick="history.back()">
         </form>
+        <a href="https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing/">My Journal</a>
         <button onClick="window.location.reload();">Revert</button>
         <button onclick="jokes()">Random Jokes</button>
         <h1 id="favorDisplay"></h1>
-        <img width="400" height="225" id="myImage" alt="" src="/static/assets/individ_photos/Tianbin.jpg">
-        <button onclick="image()">switch</button>
+        <input type="button" value="Mask" onclick="maskswitch();"/>
+        <img width="400" height="225" src="/static/assets/individ_photos/Tianbin.jpg" id="mask" alt=""/>
         <h1>I'm studying in Del Norte. I like playing video game and soccer. My goal in this class is to make a website with our team.</h1>
         <script>
             var joke = [
@@ -35,13 +36,46 @@
                 'A: Ctrl+P',
                 'Your annual reminder that computer programmers cannot tell Christmas from Halloween' +
                 'A: because DEC(25) = OCT(31)',
+                'A computer programmer goes fishing. When he comes home his wife asked him how it went?' +
+                'A: As he holds up 8 fish, he says "I only got one byte"',
+                'What does the computer programmer call a car with a flat tire?' +
+                'A: Floppy drive.',
+                'Why did the computer programmer go to see his boss?' +
+                'A: Because he wanted arrays',
+                'Why are blind people bad computer programmers?' +
+                'A: Because they cant C.',
+                'Why did the computer programmer put his brownies back in the oven?' +
+                'A: They were too GUI.',
+                'A computer programmer was asked if he used Java or something else.' +
+                'A: After a short pause, he replied "Yes."',
+                'What happens when a computer programmer does a marathon?' +
+                'A: Runtime Error.',
+                'What does the libertarian computer programmer say?' +
+                'A: All fields should be private.',
+                'What did the hungry computer programmer say?' +
+                'A: All I want is one byte. Hell, I will even take a nibble.',
+                'What do computer programmers and aged-care nurses have in common?' +
+                'A: They both worry about the position of colons.',
+
             ]
             function jokes() {
                 var x = Math.floor(Math.random() * (joke.length));
                 document.getElementById('favorDisplay').innerHTML = joke[x];
             }
-            function image() {
-                document.getElementById('myImage').src="/static/assets/individ_photos/Tianbin2.jpg";
+
+            //code templated from Gabriel
+            let a = 0
+            function maskswitch(){
+                const pic1 ="/static/assets/individ_photos/Tianbin2.jpg"
+                const pic2 ="/static/assets/individ_photos/Tianbin.jpg"
+                if (a === 0){
+                    document.getElementById('mask').src = pic1;
+                    a = 1
+                }
+                else {
+                    document.getElementById('mask').src = pic2;
+                    a = 0
+                }
             }
         </script>
     </div>
