@@ -6,6 +6,7 @@
 2. [Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#journals)
 4. [Project Description](https://github.com/TheRadRabbidRabbit/Team-Lovelace#project-description)
 5. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
+6. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 
 ## Project Description
 ### TBD
@@ -33,3 +34,6 @@
 ### Week 0: 11/15-11/19
 
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
+
+## Innovate - Sprint 1 and 2
+### Week 1: 11/29-12/3
