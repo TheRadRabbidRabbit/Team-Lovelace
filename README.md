@@ -33,12 +33,3 @@
 ### Week 0: 11/15-11/19
 
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
-#### Progress
-|Name     | Task                  | Link to ticket | Commit |
-|:--------| :---------------------| :--------------| :------|
-|Allie | | | |
-|Gabriel | | | |
-|Justin |
-|Rebecca|
-|Tianbin|
-
