@@ -23,10 +23,12 @@
 | Tianbin Liu |[@TianbinLiu](https://github.com/TianbinLiu)| [Tasks](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+assignee%3TianbinLiu) |[Scrum Board](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1?card_filter_query=assignee%3TianbinLiu)| [Commits](https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=TianbinLiu)|
 
 ## Journals
-- [Tianbin](https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing)
-- [Gabriel](https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing)
 - [Allie](https://docs.google.com/document/d/1nq3-OJlw7ZGxw-4uEVVfOaJVHPAkBP655eeFVQC-eKY/edit?usp=sharing)
+- [Gabriel](https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing)
 - [Justin](https://docs.google.com/document/d/1AHQbhVttdKFzQNvInH9uTS2ny8JK_y53F66dNiTZVQQ/edit?usp=sharing)
+- [Rebecca](https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit?usp=sharing)
+- [Tianbin](https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing)
+
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
 ### Commit policies 
