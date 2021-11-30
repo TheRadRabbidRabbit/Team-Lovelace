@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block meta %}
+    <title>Allie about page</title>
+{% endblock %}
+
+{% block body %}
+    <style>
+        body {
+            background: rgb(24,173,201);
+            background: linear-gradient(90deg, rgba(24,173,201,1) 0%, rgba(163,57,228,1) 100%);
+        }
+        h1 {
+            color: white;
+            margin-left: 15px;
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+        p {
+            color: white;
+            margin-left: 15px;
+        }
+        img {
+            margin: 5px 15px 20px;
+        }
+        a {
+            margin-left: 15px;
+            color: white;
+        }
+    </style>
+
+    <script>
+        //function setup borrowed from gabe's page
+        let x = 0
+        const mask ="static/assets/individ_photos/alliemask.jpg"
+        const nomask ="static/assets/individ_photos/allienomask.jpg"
+        function facereveal(){
+            if (x == 1){
+                document.getElementById('face').src = mask;
+                x = 0
+            }
+            else {
+                document.getElementById('face').src = nomask;
+                x = 1
+            }
+        }
+    </script>
+    <script>
+        <!-- api format borrowed from tianbin's code -->
+        const space = [
+            'Space is about −270.45 °C, or -519 °F. Brrrr!',
+            'There is no sound in space because there is no matter for the waves to travel through',
+            'Enceladus, one of Saturn’s moons, reflects 90% of the Sun’s light because of its icy surface',
+            'The highest mountain in the solar system, Olympus Mons, is located on Mars. Its almost 16 miles tall, making it 3 times as high as Mount Everest!',
+            'In our solar system, 99.86% of the matter is stored in the sun. The remaining 0.14% is divided between the planets, asteroids, comets, and other bodies.',
+            'Most comets form in the Oort Cloud or Kuiper Belt, in the outer regions of the solar system.',
+            ''
+        ]
+        function space() {
+            const s = Math.floor(Math.random() * (space.length));
+            document.getElementById('favorDisplay').innerHTML = space[s];
+        }
+    </script>
+
+    <div id="wrapper">
+        <div>
+            <h1>About Me</h1>
+            <p>Hi! I'm Allie Xiao, a junior at Del Norte studying computer science. I like listening to music and coding in Python.</p>
+        </div>
+        <div>
+            <img src="/static/assets/individ_photos/alliemask.jpg" height=178px width=178px alt="" id="face">
+            <button onclick="facereveal()">My face</button>
+        </div>
+        <div>
+            <button onclick="space()">Want to learn about space?</button>
+            <p id="favorDisplay"></p>
+        </div>
+        <div>
+            <a href="https://docs.google.com/document/d/1nq3-OJlw7ZGxw-4uEVVfOaJVHPAkBP655eeFVQC-eKY/edit?usp=sharing" target="_blank">Trimester 2 Journal</a>
+        </div>
+    </div>
+
+{% endblock %}
