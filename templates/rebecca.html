@@ -1,2 +1,34 @@
 <!DOCTYPE html>
 {% extends "layout.html" %}
+
+{% block meta %}
+    <title>Rebecca Su</title>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="/static/css/rebecca.css">
+{% endblock %}
+
+{% block content %}
+   <script>
+        function toggle() {
+            // using includes because the image source is actually the complete file path, so will not be exactly the same as the HTML
+            if(document.getElementById("img").src.includes(document.getElementById("img1").innerHTML)) {
+                document.getElementById("img").src = document.getElementById("img2").innerHTML;
+            }
+            else {
+                document.getElementById("img").src = document.getElementById("img1").innerHTML;
+            }
+        }
+    </script>
+    <h1>Hi, I'm Rebecca!</h1>
+
+    <a href="https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit?usp=sharing">Link to Journal</a>
+
+    <img id=img alt="" width="123" height="158" src="/static/assets/individ_photos/r1.jpg">
+    <p hidden id="img1">/static/assets/individ_photos/r1.jpg</p>
+    <p hidden id="img2">/static/assets/individ_photos/r2.jpg</p>
+    <button onclick="toggle()">Toggle Image!</button>
+
+    <p>{{ players }}</p>
+{% endblock %}

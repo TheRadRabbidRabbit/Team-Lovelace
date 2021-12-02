@@ -1,3 +1,4 @@
+import requests
 from flask import Flask, render_template, request
 
 # create an instance of flask object
@@ -26,9 +27,22 @@ def justin():
     return render_template("justin.html")
 
 
-@app.route("/rebecca")
+@app.route("/rebecca", methods=["GET", "POST"])
 def rebecca():
-    return render_template("rebecca.html")
+    url = "https://free-nba.p.rapidapi.com/players"
+
+    querystring = {"page":"0","per_page":"25","search":"curry"}
+
+    headers = {
+        'x-rapidapi-host': "free-nba.p.rapidapi.com",
+        'x-rapidapi-key': "199e385baamshc0a4c645191a179p191ebdjsn70f0155c5394"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    players = response.json()
+
+    return render_template("rebecca.html", players=players)
 
 
 @app.route("/tianbin")
