@@ -2,11 +2,11 @@
 ## [Scrum Board](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1), [Insights](https://github.com/TheRadRabbidRabbit/Team-Lovelace/graphs/contributors)
 
 ## Table of Contents
-1. [Contributors](https://github.com/TheRadRabbidRabbit/Team-Lovelace#contributors)
-2. [Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#journals)
-4. [Project Description](https://github.com/TheRadRabbidRabbit/Team-Lovelace#project-description)
-5. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
-6. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
+1. [Project Description](https://github.com/TheRadRabbidRabbit/Team-Lovelace#project-description)
+2. [Contributors](https://github.com/TheRadRabbidRabbit/Team-Lovelace#contributors)
+3. [Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#journals)
+4. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
+5. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 
 ## Project Description
 
@@ -33,7 +33,6 @@ Website Home Page -- image to be added later
 
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
-
 
 ## Innovate - Sprint 1 and 2
 ### Week 1: 11/29-12/3
