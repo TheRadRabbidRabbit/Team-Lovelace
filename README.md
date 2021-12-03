@@ -9,10 +9,11 @@
 6. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 
 ## Project Description
-### TBD
-Website Home Page -- image to be added later
 
-### TBD
+An interactive website covering the 5 Big Ideas of CollegeBoard's AP Computer Science Principles.
+See the [website ideation](https://github.com/TheRadRabbidRabbit/Team-Lovelace/wiki/Website-Ideation#purpose) Wiki for more information.
+
+Website Home Page -- image to be added later
 
 ## Contributors
 | Name        | Role       | GitHub ID and Profile                  | Tasks                                              | Scrum Board                          | Commits |
