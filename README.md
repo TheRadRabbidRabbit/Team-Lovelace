@@ -10,7 +10,7 @@
 
 ## Project Description
 
-An interactive website covering the 5 Big Ideas of CollegeBoard's AP Computer Science Principles.
+An interactive website covering the 5 Big Ideas of College Board's AP Computer Science Principles.
 See the [website ideation](https://github.com/TheRadRabbidRabbit/Team-Lovelace/wiki/Website-Ideation#purpose) Wiki for more information.
 
 Website Home Page -- image to be added later
