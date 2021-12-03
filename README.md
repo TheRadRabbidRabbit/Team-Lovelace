@@ -10,7 +10,7 @@
 
 ## Project Description
 ### TBD
-![Website Home Page](TBD)
+Website Home Page -- image to be added later
 
 ### TBD
 
