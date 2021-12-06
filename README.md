@@ -37,3 +37,5 @@ Website Home Page -- image to be added later
 ## Innovate - Sprint 1 and 2
 ### Week 1: 11/29-12/3
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
+### Week 2: 12/6-12/10
+#### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/24)
