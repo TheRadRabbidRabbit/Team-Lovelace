@@ -1,6 +1,5 @@
 import requests
-from flask import Flask, render_template, request
-
+from flask import Flask, render_template
 # create an instance of flask object
 app = Flask(__name__)
 
@@ -31,7 +30,7 @@ def justin():
 def rebecca():
     url = "https://free-nba.p.rapidapi.com/players"
 
-    querystring = {"page":"0","per_page":"25","search":"curry"}
+    querystring = {"page": "0", "per_page": "25", "search": "curry"}
 
     headers = {
         'x-rapidapi-host': "free-nba.p.rapidapi.com",
