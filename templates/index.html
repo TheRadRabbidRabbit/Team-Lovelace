@@ -1,28 +1,12 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="/static/css/video_style.css">
+
 {% block meta %}
-<div id="video_wrapper">
-    <video autoplay muted loop>
-        <source src="https://drive.google.com/uc?export=view&id=1Qote5m--Bme0bE4_o6wAKNRxWY8pJnuL" type="video/mp4">
-    </video>
-    <div id="wrapper2">
-        {% include "layout.html" %}
-        <div class="product" style="margin-top: 2%;">
-            <div class="row" style="padding: 2%; padding-top: 10%; padding-bottom: 5%;">
-                <div class="col-8" >
-                    <h2 style="color: white">Team-lovelace-Mental health</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <title>Team Lovelace</title>
 {% endblock %}
 
-{% block body %}
-    <div id="wrapper">
-        <h2 style="color: white">Contact us-click the image!</h2>
-        <a href="https://www.readanybook.com/online/634176" target="-blank">
-            <img src="/static/assets/delnorte_HS_foundation_logo.png" style="float:right; border:0" width="200" height="200" alt="" />
-        </a>
-    </div>
-{% endblock %}
+<body>
+    {% include "layout.html" %}
+    {% block body %}
+
+    {% endblock %}
+</body>
