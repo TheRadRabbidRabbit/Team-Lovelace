@@ -33,7 +33,7 @@ Website Home Page -- image to be added later
 
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
-
+Established teams, tools, and platforms for communication
 ## Innovate - Sprint 1 and 2
 ### Week 1: 11/29-12/3
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
