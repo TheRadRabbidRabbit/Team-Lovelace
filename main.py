@@ -19,22 +19,22 @@ def about_the_exam():
 
 @app.route("/allie")
 def allie():
-    return render_template("allie.html")
+    return render_template("aboutus/allie.html")
 
 
 @app.route("/gabriel")
 def gabriel():
-    return render_template("gabriel.html")
+    return render_template("aboutus/gabriel.html")
 
 
 @app.route("/justin")
 def justin():
-    return render_template("justin.html")
+    return render_template("aboutus/justin.html")
 
 
 @app.route("/tianbin")
 def tianbin():
-    return render_template("tianbin.html")
+    return render_template("aboutus/tianbin.html")
 
 
 @app.route("/rebecca", methods=["GET", "POST"])
@@ -50,22 +50,22 @@ def rebecca():
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     data = response.json()
-    return render_template("rebecca.html", data=data)
+    return render_template("aboutus/rebecca.html", data=data)
 
 
 @app.route("/collaboration")
 def collaboration():
-    return render_template("Big Idea/Big Idea 1/collaboration.html")
+    return render_template("Big Ideas/Big Idea 1/collaboration.html")
 
 
 @app.route("/creative-development")
 def creative_development():
-    return render_template("Big Idea/Big Idea 1/creative_development.html")
+    return render_template("Big Ideas/Big Idea 1/creative_development.html")
 
 
 @app.route("/program-design")
 def program_design():
-    return render_template("Big Idea/Big Idea 1/program_design.html")
+    return render_template("Big Ideas/Big Idea 1/program_design.html")
 
 
 @app.route("/support")
