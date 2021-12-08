@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block style %}
-    <link rel="stylesheet" type="text/css" href="/static/css/rebecca.css">
+
 {% endblock %}
 
 {% block content %}
@@ -23,11 +23,58 @@
     </script>
     <h1>Hi, I'm Rebecca!</h1>
 
-    <a href="https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit?usp=sharing">Link to Journal</a>
-
     <img id=img alt="" width="123" height="158" src="/static/assets/individ_photos/r1.jpg">
     <p hidden id="img1">/static/assets/individ_photos/r1.jpg</p>
     <p hidden id="img2">/static/assets/individ_photos/r2.jpg</p>
-    <button onclick="toggle()">Toggle Image!</button>
 
+    <br><button onclick="toggle()">Toggle Image!</button>
+
+    <br>
+    <h2>Relevant Links</h2>
+    <ul>
+        <li><a href="https://github.com/Rebecca-123">GitHub Profile</a></li>
+        <li><a href="https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=Rebecca-123">GitHub Commits (Contributions to Project)</a></li>
+        <li><a href="https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit?usp=sharing">Link to Journal</a></li>
+        <li><a href="https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit#heading=h.fnm238pny2qn">College Board Create Task Planning</a></li>
+    </ul>
+
+    <h2>NBA Teams</h2>
+
+    {% set teams = data.data %}
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Abbreviation</th>
+                <th scope="col">City</th>
+                <th scope="col">Conference</th>
+                <th scope="col">Full Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in teams %}
+                <tr>
+                    <th scope="row">{{ team.id }}</th>
+                    <td>{{ team.abbreviation }}</td>
+                    <td>{{ team.city }}</td>
+                    <td>{{ team.conference }}</td>
+                    <td>{{ team.full_name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">JSON Format of NBA RapidAPI Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ teams }}</td>
+            </tr>
+        </tbody>
+    </table>
 {% endblock %}
