@@ -46,25 +46,9 @@
             }
         }
     </script>
-    <script>
-        <!-- api format borrowed from tianbin's code -->
-        const space = [
-            'Space is about −270.45 °C, or -519 °F. Brrrr!',
-            'There is no sound in space because there is no matter for the waves to travel through',
-            'Enceladus, one of Saturn’s moons, reflects 90% of the Sun’s light because of its icy surface',
-            'The highest mountain in the solar system, Olympus Mons, is located on Mars. Its almost 16 miles tall, making it 3 times as high as Mount Everest!',
-            'In our solar system, 99.86% of the matter is stored in the sun. The remaining 0.14% is divided between the planets, asteroids, comets, and other bodies.',
-            'Most comets form in the Oort Cloud or Kuiper Belt, in the outer regions of the solar system.',
-            ''
-        ]
-        function space() {
-            const s = Math.floor(Math.random() * (space.length));
-            document.getElementById('favorDisplay').innerHTML = space[s];
-        }
-    </script>
 
-    <div id="wrapper">
-        <div>
+    <div class="center-block" style="...">
+        <div class="column-12" style="...">
             <h1>About Me</h1>
             <p>Hi! I'm Allie Xiao, a junior at Del Norte studying computer science. I like listening to music and coding in Python.</p>
         </div>
@@ -73,7 +57,7 @@
             <button onclick="facereveal()">My face</button>
         </div>
         <div>
-            <button onclick="space()">Want to learn about space?</button>
+            <button>Want to learn about space?</button>
             <p id="favorDisplay"></p>
         </div>
         <div>

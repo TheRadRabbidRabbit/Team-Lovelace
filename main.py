@@ -19,22 +19,22 @@ def about_the_exam():
 
 @app.route("/allie")
 def allie():
-    return render_template("aboutus/allie.html")
+    return render_template("about_us/allie.html")
 
 
 @app.route("/gabriel")
 def gabriel():
-    return render_template("aboutus/gabriel.html")
+    return render_template("about_us/gabriel.html")
 
 
 @app.route("/justin")
 def justin():
-    return render_template("aboutus/justin.html")
+    return render_template("about_us/justin.html")
 
 
 @app.route("/tianbin")
 def tianbin():
-    return render_template("aboutus/tianbin.html")
+    return render_template("about_us/tianbin.html")
 
 
 @app.route("/rebecca", methods=["GET", "POST"])
@@ -50,7 +50,7 @@ def rebecca():
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     data = response.json()
-    return render_template("aboutus/rebecca.html", data=data)
+    return render_template("about_us/rebecca.html", data=data)
 
 
 @app.route("/collaboration")
