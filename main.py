@@ -39,9 +39,9 @@ def tianbin():
 
 @app.route("/rebecca", methods=["GET", "POST"])
 def rebecca():
-    url = "https://free-nba.p.rapidapi.com/players"
+    url = "https://free-nba.p.rapidapi.com/teams"
 
-    querystring = {"page": "0", "per_page": "25", "search": "curry"}
+    querystring = {"page": "0"}
 
     headers = {
         'x-rapidapi-host': "free-nba.p.rapidapi.com",
@@ -49,10 +49,8 @@ def rebecca():
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
-
-    players = response.json()
-
-    return render_template("rebecca.html", players=players)
+    data = response.json()
+    return render_template("rebecca.html", data=data)
 
 
 @app.route("/collaboration")
