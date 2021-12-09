@@ -8,7 +8,8 @@
 {% block content %}
     <style>
         body {
-            background-color: #8afff1;
+            background: rgb(63,144,251);
+            background: radial-gradient(circle, rgba(63,144,251,1) 0%, rgba(70,240,252,1) 100%);
         }
     </style>
 
@@ -23,16 +24,16 @@
         }
     </script>
 
-    <h1 style="padding: 15px; font-family: Cambria, serif">Hi, I'm Rebecca!</h1>
+    <h1 style="padding: 10px; font-family: Cambria, serif">Hi, I'm Rebecca!</h1>
 
-    <div style="padding: 15px; font-family: Cambria, serif">
-        <img id=img alt="" width="123" height="158" src="/static/assets/individ_photos/r1.jpg">
+    <div style="padding: 10px; font-family: Cambria, serif">
+        <img id=img alt="" width="123" height="158" src="/static/assets/individ_photos/r1.jpg" style="border-radius: 10px;">
         <p hidden id="img1">/static/assets/individ_photos/r1.jpg</p>
         <p hidden id="img2">/static/assets/individ_photos/r2.jpg</p>
         <button onclick="toggle()">Toggle Image!</button>
     </div>
 
-    <div style="padding: 15px; font-family: Cambria, serif">
+    <div style="padding: 10px; font-family: Cambria, serif">
     <h2>Relevant Links</h2>
     <ul>
         <li><a href="https://github.com/Rebecca-123">GitHub Profile</a></li>
@@ -46,7 +47,7 @@
     </ul>
     </div>
 
-    <div style="padding: 15px; font-family: Cambria, serif">
+    <div style="padding: 10px; font-family: Cambria, serif">
     <h2>NBA Teams</h2>
 
     {% set teams = data.data %}
@@ -76,7 +77,7 @@
 
     </div>
 
-    <div style="padding: 15px; font-family: Cambria, serif">
+    <div style="padding: 10px; font-family: Cambria, serif">
     <table class="table">
         <thead>
         <tr>
