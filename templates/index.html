@@ -5,8 +5,22 @@
     <title>Team Lovelace</title>
 {% endblock %}
 
-<body>
-    {% block body %}
+{% block content %}
+    <style>
+        body {
+            background: #CBF5F6
+        }
+    </style>
+        <div class="product" style="margin-top: 2%;">
+            <div class="row" style="padding: 2%; padding-top: 10%; padding-bottom: 5%; padding-left: 25%; ">
+                <div class="col-8" >
+                    <h1 style="width:1000px; font-size:50px;color: black; margin-top:25px; text-align:center;">A Guide to AP Computer Science Principles</h1>
+                    <h3 style="color: black; margin-top:25px; text-align:center;">Ace the AP Computer Science Principles College Board Exam</h3>
+                    <div style="text-align:center">
+                    <input type="button" onclick="window.location.href='https://www.collegeboard.org/';" style="background-color:#8C52FF;color:#FFFFFF;font-family: Roboto,serif; width:150px;height:40px; border-radius: 30px;border:0; margin-top:25px;" value="Learn More">
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
 
-    {% endblock %}
-</body>
