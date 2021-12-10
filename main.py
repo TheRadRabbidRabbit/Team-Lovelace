@@ -19,6 +19,15 @@ def about_the_exam():
 
 @app.route("/allie")
 def allie():
+    url = "https://dark-sky.p.rapidapi.com/37.774929,-122.419418,2019-02-20"
+
+    headers = {
+    'x-rapidapi-host': "dark-sky.p.rapidapi.com",
+    'x-rapidapi-key': "ad9b4d3835msh0eb56c8fa3cc4dep1aff27jsn1052c29172ad"
+}
+    response = requests.request("GET", url, headers=headers)
+
+    print(response.text)
     return render_template("about_us/allie.html")
 
 
