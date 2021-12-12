@@ -65,6 +65,13 @@
         }
     }
 </script>
+    <style>
+        .navbar{
+            z-index: 900;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
 <div id="video_wrapper">
     <video autoplay muted loop>
         <source src="/static/assets/tianbin.mp4" type="video/mp4">
@@ -77,6 +84,7 @@
         <a href="https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing/">My Journal</a>
         <a href="https://github.com/TianbinLiu">Github Profile</a>
         <a href="https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=TianbinLiu">Github Commits</a>
+        <a href="https://docs.google.com/document/d/1I9pbuFOozISds3IxyjaAfV4I--kCuyFbhJlvr6TEv-0/edit?usp=sharing">Create Task planning</a>
         <button onClick="window.location.reload();">Revert</button>
         <button onclick="jokes()">Random Jokes</button>
         <h1 id="favorDisplay"></h1>
@@ -86,6 +94,7 @@
     </div>
 </div>
 {% endblock %}
+
 
 
 

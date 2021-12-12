@@ -56,3 +56,6 @@ h1
     text-align:center;
 }
 
+.navbar{
+    z-index: 900 !important;
+}
