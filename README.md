@@ -16,7 +16,7 @@ See the [website ideation](https://github.com/TheRadRabbidRabbit/Team-Lovelace/w
 Website Home Page -- image to be added later
 
 ## Contributors
-| Name        | Role       | GitHub ID and Profile                  | Tasks                                              | Scrum Board                          | Commits |
+| Name        | Role       | GitHub ID and Profile                  | Tasks                                              | Scrum Board (Filtered Issues)                          | Commits |
 |:------------|:-----------|:---------------------------------------|:--------------------------------------------------:|:------------------------------------:|:-------:|
 | Allie Xiao  | Scrum Master |[@xiaoa0](https://github.com/xiaoa0)    | [Tasks](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+assignee%3xiaoa0) |[Scrum Board](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1?card_filter_query=assignee%3Axiaoa0)| [Commits](https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=xiaoa0)|
 | Gabriel Boudreau  | Deployment Manager |[@Gabrielboudreau](https://github.com/Gabrielboudreau)| [Tasks](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+assignee%3Gabrielboudreau) |[Scrum Board](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1?card_filter_query=assignee%3Gabrielboudreau)| [Commits](https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=Gabrielboudreau)|
