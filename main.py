@@ -1,8 +1,9 @@
 import requests
-from flask import Flask, render_template
+from flask import render_template
+from __init__ import app
+from crud.app_crud import app_crud
 
-# create an instance of flask object
-app = Flask(__name__)
+app.register_blueprint(app_crud)
 
 
 # home page accessed with http://127.0.0.1:5000/
