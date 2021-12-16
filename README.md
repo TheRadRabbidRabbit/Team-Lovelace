@@ -39,3 +39,6 @@ Established teams, tools, and platforms for communication
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
 ### Week 2: 12/6-12/10
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/24)
+## PBL Readiness - Sprint 3
+### Week 3: 12/13-12/17
+#### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/12)
