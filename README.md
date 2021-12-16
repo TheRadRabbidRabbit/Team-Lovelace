@@ -7,6 +7,7 @@
 3. [Journals](https://github.com/TheRadRabbidRabbit/Team-Lovelace#journals)
 4. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
 5. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
+6. [Sprint 3 - PBL Readiness](https://github.com/TheRadRabbidRabbit/Team-Lovelace#pbl-readiness---sprint-3)
 
 ## Project Description
 
