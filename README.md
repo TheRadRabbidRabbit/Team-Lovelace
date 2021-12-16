@@ -38,8 +38,11 @@ Established teams, tools, and platforms for communication
 ## Innovate - Sprint 1 and 2
 ### Week 1: 11/29-12/3
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
+Website planning and ideation (on wiki)
 ### Week 2: 12/6-12/10
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/24)
+About pages, planning 
 ## PBL Readiness - Sprint 3
 ### Week 3: 12/13-12/17
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/12)
+3 frontend screens: home page, collaboration, and creative development
