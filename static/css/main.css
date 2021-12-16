@@ -1,0 +1,33 @@
+.navbar{
+    z-index: 900 !important;
+}
+
+h1
+{
+    font-family: Roboto, serif;
+    color: white;
+}
+
+h2
+{
+    font-family: Roboto, serif;
+    color: white;
+}
+
+h3
+{
+    font-family: Roboto, serif;
+    color: white;
+}
+
+p
+{
+    font-family: Roboto, serif;
+    color: white;
+}
+
+body
+{
+    font-family: Roboto, serif;
+    color: white;
+}

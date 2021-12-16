@@ -4,7 +4,7 @@ body
     width:100%;
     margin:0 auto;
     padding:0px;
-    font-family:helvetica;
+    font-family: Roboto, serif
 }
 #video_wrapper
 {
@@ -47,15 +47,4 @@ h1
     background-color: rgba(112, 112, 112, 0.74);
 }
 
-#title
-{
 
-    font-size:45px;
-    color:white;
-    margin-top:250px;
-    text-align:center;
-}
-
-.navbar{
-    z-index: 900 !important;
-}
