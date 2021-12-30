@@ -59,14 +59,19 @@ def collaboration():
     return render_template("Big Ideas/Big Idea 1/collaboration.html")
 
 
-@app.route("/creative-development")
-def creative_development():
-    return render_template("Big Ideas/Big Idea 1/creative_development.html")
-
-
 @app.route("/program-design")
 def program_design():
     return render_template("Big Ideas/Big Idea 1/program_design.html")
+
+
+@app.route("/program-function")
+def program_function():
+    return render_template("Big Ideas/Big Idea 1/program_function.html")
+
+
+@app.route("/identifying-and-correcting-errors")
+def errors():
+    return render_template("Big Ideas/Big Idea 1/errors.html")
 
 
 @app.route("/support")

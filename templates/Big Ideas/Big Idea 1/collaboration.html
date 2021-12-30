@@ -2,57 +2,57 @@
 {% extends "layout.html" %}
 
 {% block meta %}
-    <title>1.1: Collaboration</title>
+    <title>1.1 Collaboration</title>
 {% endblock %}
 
 {% block content %}
-<style>
-    /* CSS hover display code templated from Makitweb: https://makitweb.com/html-how-to-show-text-above-image-on-hover/*/
-    body{
-        background-color: #C2DCFF;
-    }
-    h1{
-        text-align:center;
-        padding-top: 15px;
-    }
-    p{
-        padding: 0% 2%;
-    }
+    <style>
+        /* CSS hover display code templated from Makitweb: https://makitweb.com/html-how-to-show-text-above-image-on-hover/*/
+        body{
+            background-color: #C2DCFF;
+        }
+        h1{
+            text-align:center;
+            padding-top: 15px;
+        }
+        p{
+            padding: 0 2%;
+        }
 
-    /* Parent Container */
-    .content_img{
-        position: relative;
-        float: left;
-        margin-right: 10px;
-    }
+        /* Parent Container */
+        .content_img{
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
 
-    /* Child Text Container */
-    .content_img div{
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: dimgrey;
-        color: white;
-        margin-bottom: 5px;
-        font-family: sans-serif;
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
-    }
+        /* Child Text Container */
+        .content_img div{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: dimgrey;
+            color: white;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: visibility 0s, opacity 0.5s linear;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
 
-    /* Hover on Parent Container */
-    .content_img:hover{
-        cursor: pointer;
-    }
+        /* Hover on Parent Container */
+        .content_img:hover{
+            cursor: pointer;
+        }
 
-    .content_img:hover div{
-        width: 40%;
-        padding: 8px 15px;
-        visibility: visible;
-        opacity: 0.8;
-    }
-</style>
+        .content_img:hover div{
+            width: 40%;
+            padding: 8px 15px;
+            visibility: visible;
+            opacity: 0.8;
+        }
+    </style>
 
     <div>
         <h1>Big Idea 1: Collaboration</h1>
@@ -63,6 +63,7 @@
             which in turn will lead to even better feedback and features in the future.
         </p>
     </div>
+
     <div class="content_img">
         <img src="static/assets/ideation/Screenshot 2021-12-02 at 12-07-12 Brainwrite.png" width='75%' height='75%' alt="...">
         <div>This is the brainwrite our team worked on when we planned out our website. Each person put their ideas for the
@@ -70,6 +71,7 @@
         </div>
     </div>
         <br>
+
     <div class="content_img">
         <img src="static/assets/scrumboard.jpeg" width="75%" height="75%" alt="...">
         <div>
@@ -79,6 +81,7 @@
             track progress.
         </div>
     </div>
+
     <div class="content_img">
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.6hSig3NLm3RZcv5s3KCYbAHaEe%26pid%3DApi&f=1" width="150%" height="150%" alt="...">
         <div>
@@ -86,5 +89,4 @@
             They are a great way to make sure that everyone is up to speed and understands what must be done by certain times.
         </div>
     </div>
-
 {% endblock %}
