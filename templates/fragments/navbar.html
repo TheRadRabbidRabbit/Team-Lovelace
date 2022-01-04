@@ -138,15 +138,20 @@
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Database
+                            Feedback
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>
-                            <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>
+                            <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>Feedback Database</a></li>
+                            <li><a class="dropdown-item" href={{ url_for('crud.search') }}>Search Feedback</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
 
         </div>
     </div>
