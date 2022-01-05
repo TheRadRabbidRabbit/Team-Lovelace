@@ -8,6 +8,7 @@
 4. [Sprint 0 - Introduction](https://github.com/TheRadRabbidRabbit/Team-Lovelace#organization---sprint-0)
 5. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 6. [Sprint 3 - PBL Readiness](https://github.com/TheRadRabbidRabbit/Team-Lovelace#pbl-readiness---sprint-3)
+7. [Sprint 4 - Algorithms and Data](https://github.com/TheRadRabbidRabbit/Team-Lovelace#algorithms-and-data---sprint-4)
 
 ## Project Description
 
@@ -46,3 +47,6 @@ About pages, planning
 ### Week 3: 12/13-12/17
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/12)
 3 frontend screens: home page, collaboration, and creative development
+## Algorithms and Data - Sprint 4
+### Week 4: 1/3-1/7
+#### [Review Ticket]
