@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block meta %}
+<body style="background-color: dodgerblue" xmlns="http://www.w3.org/1999/html">
+    <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large"></div>
+{% endblock %}
+{% block content %}
+<script>
+    let a = 1
+    let b = ""
+    let playerValue = ""
+    let binarySearchValue = Math.round(Math.random()*100)
+    let computerAttempts = 0
+    let attempts = 0
+    function randomizer(){
+        a = Math.round(Math.random()*100)
+        attempts = 0
+        document.getElementById("result").innerHTML = ("")
+        b = ""
+    }
+    function check(){
+        playerValue = document.getElementById("answer").value;
+        if (playerValue == a){
+            attempts = (attempts+1)
+//            while (true) {
+//                binarySearch()
+//                if (b=1) {
+//                    break;
+//                }
+            }
+            document.getElementById("result").innerHTML = ("Congrats that was correct, it took " + attempts + " tries.")
+        }
+        if (playerValue < a){
+            attempts = (attempts+1)
+            document.getElementById("result").innerHTML = ("Too low, try again. This was your " + attempts + " try")
+        }
+        if (playerValue > a){
+            attempts = (attempts+1)
+            document.getElementById("result").innerHTML = ("Too high, try again. This was your " + attempts + " try")
+        }
+    /*
+    function binarySearch(){
+        if (binarySearchValue == a){
+            computerAttempts = (computerAttempts+1)
+            b=1
+        }
+        if (binarySearchValue < a){
+            computerAttempts = (computerAttempts+1)
+            binarySearchValue = (Math.round(binarySearchValue/2))
+        }
+        if (binarySearchValue > a){
+            computerAttempts = (computerAttempts+1)
+            binarySearchValue = (Math.round(binarySearchValue*2))
+        }
+    }
+    */
+</script>
+    <div><p>Welcome to Gabe's Minigame</p></div>
+    <div><p>This minigame relates to the collegeboard 3.11 topic: Binary Search</p></div>
+    <input type="button" value="Restart" onclick="randomizer();"/>
+    <div>
+        <p id="result"></p>
+    </div>
+    <div>
+        <label for="answer" class="button"></label>
+        <input name="answer" id="answer">
+        <button class="button" onclick="check()">Submit</button>
+    </div>
+{% endblock %}

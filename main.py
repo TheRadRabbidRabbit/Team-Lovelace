@@ -37,6 +37,9 @@ def justin():
 def tianbin():
     return render_template("about_us/tianbin.html")
 
+@app.route("/gabeMinigame")
+def gabeMinigame():
+    return render_template("about_us/gabeMinigame.html")
 
 @app.route("/rebecca", methods=["GET", "POST"])
 def rebecca():
