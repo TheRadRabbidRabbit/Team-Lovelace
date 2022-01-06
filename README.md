@@ -50,3 +50,4 @@ About pages, planning
 ## Algorithms and Data - Sprint 4
 ### Week 4: 1/3-1/7
 #### [Rebecca Su Review Ticket](https://github.com/Rebecca-123/csp_journal/issues/1)
+#### [Allie Xiao review ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/45)
