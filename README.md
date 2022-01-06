@@ -30,7 +30,7 @@ Website Home Page -- image to be added later
 - [Allie](https://docs.google.com/document/d/1nq3-OJlw7ZGxw-4uEVVfOaJVHPAkBP655eeFVQC-eKY/edit?usp=sharing)
 - [Gabriel](https://docs.google.com/document/d/14g0EL3t9ETuV1lztLyBrkC-HJE5YgoFDMPx3iTwfzuA/edit?usp=sharing)
 - [Justin](https://docs.google.com/document/d/1AHQbhVttdKFzQNvInH9uTS2ny8JK_y53F66dNiTZVQQ/edit?usp=sharing)
-- [Rebecca](https://docs.google.com/document/d/1jgZfroaX7tC0uilEOarsjo7xJjUTaSmEAQq8CU3GvIo/edit?usp=sharing)
+- [Rebecca](https://github.com/Rebecca-123/csp_journal)
 - [Tianbin](https://docs.google.com/document/d/1JVrCCc76Q3gFnsQgK4DfJZuFwhvPvr10pgzCrD9bI1A/edit?usp=sharing)
 
 ## Organization - Sprint 0 
@@ -49,4 +49,4 @@ About pages, planning
 3 frontend screens: home page, collaboration, and creative development
 ## Algorithms and Data - Sprint 4
 ### Week 4: 1/3-1/7
-#### [Review Ticket]
+#### [Rebecca Su Review Ticket](https://github.com/Rebecca-123/csp_journal/issues/1)
