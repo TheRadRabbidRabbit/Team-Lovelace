@@ -2,14 +2,15 @@
 {% extends "layout.html" %}
 {% block meta %}
     <body style="background-color: dodgerblue">
-    <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large">
+    <div class="center-block" style="margin: 0% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large">
 {% endblock %}
 {% block content %}
 <script>
     let a = 0
+    let pic1 ="static/assets/Pic2.jpg"
+    let pic2 ="static/assets/Pic1.jpg"
+    document.getElementById('mask').src = pic1;
     function maskswitch(){
-        const pic1 ="static/assets/Pic2.jpg"
-        const pic2 ="static/assets/Pic1.jpg"
         if (a === 0){
             document.getElementById('mask').src = pic1;
             a = 1
@@ -33,7 +34,7 @@
         <p>Hi! I'm Gabriel Boudreau</p>
     </div>
         <div id="imgswap">
-        <img src=""
+        <img src="static/assets/Pic1.jpg" height="190px" width="150px"
              id="mask"
         />
         <h1 id="apiDisplay"></h1>

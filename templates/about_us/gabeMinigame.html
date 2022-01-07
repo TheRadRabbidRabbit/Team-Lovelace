@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 {% extends "layout.html" %}
 {% block meta %}
-<body style="background-color: dodgerblue" xmlns="http://www.w3.org/1999/html"></body>
-<div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large"></div>
+    <body style="background-color: dodgerblue" xmlns="http://www.w3.org/1999/html"></body>
+    <div class="center-block" ></div>
+
 {% endblock %}
 {% block content %}
-<script>
-    let a = Math.round(Math.random()*100)
-    let b = "0"
-    let upperbound = 100
-    let lowerbound = 0
-    let playerValue = ""
-    let binarySearchValue = ((upperbound+lowerbound)/2)
-    let computerAttempts = 0
-    let attempts = 0
+    <script>
+        let a = Math.round(Math.random()*100)
+        let b = "0"
+        let upperbound = 100
+        let lowerbound = 0
+        let playerValue = ""
+        let binarySearchValue = ((upperbound+lowerbound)/2)
+        let computerAttempts = 0
+        let attempts = 0
 
-    function randomizer(){
-        a = Math.round(Math.random()*100)
-        attempts = 0
-        document.getElementById("result").innerHTML = ("")
-        b = "0"
-        computerAttempts = 0
-    }
-    function check() {
-        playerValue = document.getElementById("answer").value;
-        if (playerValue<0 || playerValue>100){
-            document.getElementById("result").innerHTML = ("Not in domain, choose a number between 1-100")
-            return check()
+        function randomizer(){
+            a = Math.round(Math.random()*100)
+            attempts = 0
+            document.getElementById("result").innerHTML = ("")
+            b = "0"
+            computerAttempts = 0
         }
-        if (playerValue == a) {
-            attempts = (attempts + 1)
-            for (let i = 0; i < 7; i++) {
-                binarySearch()
+        function check() {
+            playerValue = document.getElementById("answer").value;
+            if (playerValue<0 || playerValue>100){
+                document.getElementById("result").innerHTML = ("Not in domain, choose a number between 1-100")
+                return check()
             }
-        document.getElementById("result").innerHTML = ("Congrats that was correct, it took " + attempts + " tries. Binary search took " + (computerAttempts+1) + " tries")
-        }
+            if (playerValue == a) {
+                attempts = (attempts + 1)
+                for (let i = 0; i < 7; i++) {
+                    binarySearch()
+                }
+                document.getElementById("result").innerHTML = ("Congrats that was correct, it took " + attempts + " tries. Binary search took " + (computerAttempts) + " tries")
+            }
 
-        if (playerValue < a){
-            attempts = (attempts+1)
-            document.getElementById("result").innerHTML = ("Too low, try again. This was your " + attempts + " try")
-        }
-        if (playerValue > a) {
-            attempts = (attempts + 1)
-            document.getElementById("result").innerHTML = ("Too high, try again. This was your " + attempts + " try")
-        }
-    }
-    function binarySearch(){
-        if (binarySearchValue == a){
-            computerAttempts = (computerAttempts+1)
-            if (b=1){
-                computerAttempts = (computerAttempts-1)
+            if (playerValue < a){
+                attempts = (attempts+1)
+                document.getElementById("result").innerHTML = ("Too low, try again. This was your " + attempts + " try")
             }
-            b=1
+            if (playerValue > a) {
+                attempts = (attempts + 1)
+                document.getElementById("result").innerHTML = ("Too high, try again. This was your " + attempts + " try")
+            }
         }
-        if (binarySearchValue < a){
-            computerAttempts = (computerAttempts+1)
-            lowerbound = binarySearchValue
-            binarySearchValue = Math.round((upperbound+lowerbound)/2)
+        function binarySearch(){
+            if (binarySearchValue == a){
+                computerAttempts = (computerAttempts+1)
+                if (b=1){
+                    computerAttempts = (computerAttempts-1)
+                }
+                b=1
+            }
+            if (binarySearchValue < a){
+                computerAttempts = (computerAttempts+1)
+                lowerbound = binarySearchValue
+                binarySearchValue = Math.round((upperbound+lowerbound)/2)
+            }
+            if (binarySearchValue > a){
+                computerAttempts = (computerAttempts+1)
+                upperbound = binarySearchValue
+                binarySearchValue = Math.round((upperbound+lowerbound)/2)
+            }
         }
-        if (binarySearchValue > a){
-            computerAttempts = (computerAttempts+1)
-            upperbound = binarySearchValue
-            binarySearchValue = Math.round((upperbound+lowerbound)/2)
-        }
-    }
-</script>
-<div><p>Welcome to Gabe's Minigame</p></div>
-<div><p>This minigame relates to the collegeboard 3.11 topic: Binary Search</p></div>
-<br><br>
-<div><p>Try to guess the random number between 1-100 in as few guesses as possible! </p></div>
-<div>
-    <p id="result"></p>
-</div>
-<div>
-    <label for="answer" class="button"></label>
-    <input name="answer" id="answer">
-    <button class="button" onclick="check()">Submit</button>
-    <input type="button" value="Restart" onclick="randomizer();"/>
-</div>
+    </script>
+    <div><p>Welcome to Gabe's Minigame</p></div>
+    <div><p>This minigame relates to the collegeboard 3.11 topic: Binary Search</p></div>
+    <br><br>
+    <div><p>Try to guess the random number between 1-100 in as few guesses as possible! </p></div>
+    <div>
+        <p id="result"></p>
+    </div>
+    <div>
+        <label for="answer" class="button"></label>
+        <input name="answer" id="answer">
+        <button class="button" onclick="check()">Submit</button>
+        <input type="button" value="Restart" onclick="randomizer();"/>
+    </div>
 {% endblock %}
