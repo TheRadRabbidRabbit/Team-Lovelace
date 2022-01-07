@@ -10,11 +10,12 @@
         body {
             background: rgb(24,173,201);
             background: linear-gradient(90deg, rgba(24,173,201,1) 0%, rgba(163,57,228,1) 100%);
-            text-align: center
+            text-align: center;
         }
         h1 {
             color: white;
             text-decoration: underline;
+            margin-top: 10px;
         }
         p {
             color: white;
@@ -31,6 +32,12 @@
         }
         button {
             margin-bottom: 5px;
+        }
+        /* trying to bump footer credit to bottom of page */
+        .bottom div {
+            font-size: 5px;
+            position: absolute;
+            bottom: 0;
         }
     </style>
 
@@ -68,10 +75,8 @@
             <a href="https://github.com/TheRadRabbidRabbit/Team-Lovelace/commits?author=xiaoa0" target="_blank">Project commits</a>
             <a href="https://docs.google.com/document/d/1nq3-OJlw7ZGxw-4uEVVfOaJVHPAkBP655eeFVQC-eKY/edit#bookmark=id.ozgvgu1qh6lv" target="_blank">Create Task planning</a>
         </div>
+        <div id="bottom">
+            Gradient background code courtesy of <a href="https://cssgradient.io/">https://cssgradient.io/</a>
+        </div>
     </div>
-
-    <div>
-
-    </div>
-
 {% endblock %}
