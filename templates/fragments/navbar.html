@@ -162,6 +162,24 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
 
+            <style>
+                .dark-mode {
+                    background-color: black;
+                    color: white;
+                }
+            </style>
+
+            <div class="form-check form-switch">
+                <input type="checkbox" onclick="darkMode()" class="form-check-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+            </div>
+
+            <script>
+                function darkMode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
         </div>
     </div>
 </nav>
