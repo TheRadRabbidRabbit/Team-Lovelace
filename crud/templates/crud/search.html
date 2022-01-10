@@ -46,8 +46,8 @@ inspiration from https://www.youtube.com/watch?v=QKcVjdLEX_s
             <div class="col-sm">
                 Feedback
             </div>
-        </div>
-        <div class="row" id="result">
+            <div id="result">
+            </div>
         </div>
     </div>
 
@@ -91,15 +91,13 @@ inspiration from https://www.youtube.com/watch?v=QKcVjdLEX_s
                 response.json().then(function(data) {
                     // loop through JSON and build HTML output
                     const div = document.createElement("div")
-                    let table = "<table><thead><tr><th>Name </th><th>Email </th><th>Phone Number </th><th>Feedback </th><tr></thead>";
-                    // add all rows to table with loop
+                    // add all rows to grid with loop
+                    let grid = ""
                     for (let i = 0; i < data.length; i++) {
-                        table += "<tr><td>"+ data[i].name +"</td><td>"+ data[i].email +"</td><td>" + data[i].phone + "</td><td>" + data[i].feedback + "</td></tr>";
+                        grid += "<div class='row'>" + "<div class='col'>" + data[i].name + "</div><div class='col'>" + data[i].email + "</div><div class='col'>" + data[i].phone + "</div><div class='col'>" + data[i].feedback + "</div></div>";
                     }
-                    // once all rows added, close table
-                    table += "</table>";
                     // update HTML with table
-                    div.innerHTML = table;
+                    div.innerHTML = grid;
                     resultContainer.appendChild(div);
                 })
             })
