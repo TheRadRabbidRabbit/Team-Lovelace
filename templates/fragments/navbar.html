@@ -150,7 +150,8 @@
                             Feedback
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>Feedback Database</a></li>
+                            <li><a class="dropdown-item" href={{ url_for('crud_api.crud_api') }}>Feedback Database</a></li>
+{#                            <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>Feedback Database</a></li>#}
                             <li><a class="dropdown-item" href={{ url_for('crud.search') }}>Search Feedback</a></li>
                         </ul>
                     </li>
@@ -176,7 +177,7 @@
 
             <script>
                 function darkMode() {
-                    var element = document.body;
+                    let element = document.body;
                     element.classList.toggle("dark-mode");
                 }
             </script>

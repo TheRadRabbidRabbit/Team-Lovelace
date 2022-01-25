@@ -2,8 +2,10 @@ import requests
 from flask import render_template
 from __init__ import app
 from crud.app_crud import app_crud
+from crud.app_crud_api import app_crud_api
 
 app.register_blueprint(app_crud)
+app.register_blueprint(app_crud_api)
 
 
 # home page accessed with http://127.0.0.1:5000/
@@ -37,9 +39,11 @@ def justin():
 def tianbin():
     return render_template("about_us/tianbin.html")
 
+
 @app.route("/gabeMinigame")
 def gabeMinigame():
     return render_template("about_us/gabeMinigame.html")
+
 
 @app.route("/rebecca", methods=["GET", "POST"])
 def rebecca():
