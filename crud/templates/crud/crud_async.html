@@ -6,16 +6,12 @@
 <!-- CONTENT (in <head>), content for this page -->
 {% block meta %}
     <title>Async CRUD page</title>
-    <script src={{  url_for("crud.static", filename="javascript/validation.js", version='101') }}></script>
-
     <script>
         function create_User(){
-            //Validate Password (must be 6-20 characters in len)
-            verifyPassword("click");
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
             const phone = document.getElementById("phone").value;
+            const feedback = document.getElementById("feedback").value;
             const requestOptions = {
                 method: 'POST',
                 headers: {
@@ -24,7 +20,7 @@
                 },
             };
             //url for Create API
-            const url='/crud_api/create/' + name + '/' + email+ '/' + password + '/' + phone;
+            const url='/crud_api/create/' + name + '/' + email+ '/' + phone + '/' + feedback;
             //Async fetch API call to the database to create a new user
             fetch(url, requestOptions).then(response => {
                 // prepare HTML search result container for new output
@@ -68,11 +64,10 @@
                     option = document.createElement("option");
                     option.innerText = data['userID'];
                     optGrp.appendChild(option);
-                    document.getElementById("pswError").innerHTML ="";
                     document.getElementById("name").value="";
                     document.getElementById("email").value="";
-                    document.getElementById("password").value="";
                     document.getElementById("phone").value="";
+                    document.getElementById("feedback").value="";
                 })
             })
         }
@@ -221,12 +216,13 @@
     <div class="container py-4 text-light bg-success">
         <header class="pb-3 mb-4 border-bottom">
             <div class="d-flex align-items-center text-light text-decoration-none">
-                <span class="fs-4">We value your feedback!</span>
+                <span class="fs-4">Async SQL CRUD Admin Page</span>
             </div>
         </header>
 
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
+                <h2>Table Viewer</h2>
                 <div class="row align-items-md-stretch">
                     <table class="table">
                         <tbody>
@@ -247,8 +243,8 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Password</th>
                                 <th>Phone</th>
+                                <th>Feedback</th>
                             </tr>
                             </thead>
                             <tbody id="result">
@@ -264,7 +260,7 @@
                                     <td>{{ row['userID'] }}</td>
                                     <td>{{ row['name'] }}</td>
                                     <td>{{ row['email'] }}</td>
-                                    <td>{{ row['password'] }}</td>
+                                    <td>{{ row['feedback'] }}</td>
                                     <td>{{ pnf }}</td>
                                 </tr>
                             {% endfor %}
@@ -283,17 +279,17 @@
                     <tr>
                         <th><label for="name">Name</label></th>
                         <th><label for="email">Email</label></th>
-                        <th><label for="password">Password</label></th>
                         <th><label for="phone">Phone</label></th>
+                        <th><label for="feedback">Feedback</label></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" name="name" id="name" required></td>
+                        <td><input type="text" name="name" id="name" placeholder="Jane Smith" required></td>
                         <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
-                        <td><input type="password" name="password" id="password" required></td>
                         <td><input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="1234567890" required></td>
-                        <td ><button onclick="create_User()">Create</button></td>
+                        <td><input type="text" name="feedback" id="feedback" placeholder="Great website!" required></td>
+                        <td><button onclick="create_User()">Create</button></td>
 
                     </tr>
                     </tbody>

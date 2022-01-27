@@ -30,8 +30,8 @@ def crud_api():
 class UsersAPI:
     # class for create/post
     class _Create(Resource):
-        def post(self, name, email, password, phone):
-            po = Users(name, email, password, phone)
+        def post(self, name, email, phone, feedback):
+            po = Users(name, email, phone, feedback)
             person = po.create()
             if person:
                 return person.read()
@@ -75,11 +75,11 @@ class UsersAPI:
             return po.read()
 
     class _UpdateAll(Resource):
-        def put(self, email, name, password, phone):
+        def put(self, email, name, phone, feedback):
             po = user_by_email(email)
             if po is None:
                 return {'message': f"{email} is not found"}, 210
-            po.update(name, password, phone)
+            po.update(name, phone, feedback)
             return po.read()
 
     # class for delete
@@ -94,13 +94,13 @@ class UsersAPI:
 
     # building RESTapi resource
     # building RESTapi resource
-    api.add_resource(_Create, '/create/<string:name>/<string:email>/<string:password>/<string:phone>')
+    api.add_resource(_Create, '/create/<string:name>/<string:email>/<string:phone>/<string:feedback>')
     api.add_resource(_Read, '/read/')
     api.add_resource(_ReadID, '/read/<int:userid>')
     api.add_resource(_ReadILike, '/read/ilike/<string:term>')
     api.add_resource(_Update, '/update/<string:email>/<string:name>')
     api.add_resource(_UpdateName, '/update/<int:userid>/<string:name>')
-    api.add_resource(_UpdateAll, '/update/<string:email>/<string:name>/<string:password>/<string:phone>')
+    api.add_resource(_UpdateAll, '/update/<string:email>/<string:name>/<string:phone>/<string:feedback>')
     api.add_resource(_Delete, '/delete/<int:userid>')
 
 
