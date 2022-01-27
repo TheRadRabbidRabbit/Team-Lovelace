@@ -5,7 +5,7 @@
 
 <!-- CONTENT (in <head>), content for this page -->
 {% block meta %}
-    <title>Async CRUD page</title>
+    <title>User Feedback</title>
     <script>
         function create_User(){
             const name = document.getElementById("name").value;
@@ -213,16 +213,17 @@
 
 <!-- CONTENT (in <body>), content for this page -->
 {% block content %}
-    <div class="container py-4 text-light bg-success">
+    <div class="container py-4 text-light bg-info">
         <header class="pb-3 mb-4 border-bottom">
             <div class="d-flex align-items-center text-light text-decoration-none">
-                <span class="fs-4">Async SQL CRUD Admin Page</span>
+                <span class="fs-4">We value your feedback!</span>
             </div>
         </header>
 
+        <p class="d-flex align-items-center text-dark text-decoration-none">Your opinions and experiences matter to us. Please share your questions, comments or insights in this database.</p>
+
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
-                <h2>Table Viewer</h2>
                 <div class="row align-items-md-stretch">
                     <table class="table">
                         <tbody>
@@ -230,7 +231,7 @@
                             <td></td>
                             <td></td>
                             <td><a href={{url_for('crud_api.crud_api')}}>Full Table </a></td>
-                            <td><a href="https://github.com/nighthawkcoders/nighthawk_csp/tree/master/crud">GitHub Source</a></td>
+                            <td><a href="https://github.com/TheRadRabbidRabbit/Team-Lovelace/tree/main/crud">GitHub Source</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -272,8 +273,7 @@
         </div>
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
-                <h2>Create a new record</h2>
-
+                <h2>Create</h2>
                 <table class="table">
                     <thead>
                     <tr>
