@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block meta %}
+    <title>Logical operators</title>
+    <body style="background-color: #DCD0F4"></body>
+{% endblock %}
+
+{% block content %}
+    <p>
+    Logical operators are often used in procedures to determine when loops start of end. Try exploring the different conditions by
+    checking the different boxes below!
+    </p>
+    <!-- Check boxes for 2 inputs-->
+    <input type="checkbox" id="input1" name="input1" value="1" />
+    <label for="input1"> 1 </label><br />
+    <input type="checkbox" id="input2" name="input2" value="2" />
+    <label for="input2"> 2 </label><br />
+
+    <style>
+        .gateimage {
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+    <script>
+        console.log(document.getElementById("input1").checked);
+        function getValues() {
+            logic1 = document.getElementById("input1").checked;
+            logic2 = document.getElementById("input2").checked;
+            // And
+            and = logic1 && logic2;
+            // Nand
+            nand = !and ;
+            // Or
+            or = logic1 || logic2;
+            // Nor
+            nor = !or;
+            // Xor
+            xor = (logic1 && !logic2) || (!logic1 && logic2);
+            // Not
+            not = !logic1;
+
+            // adding value to textbox
+            document.getElementById("and_gate_text").value = and;
+            document.getElementById("nand_gate_text").value = nand;
+            document.getElementById("or_gate_text").value = or;
+            document.getElementById("nor_gate_text").value = nor;
+            document.getElementById("xor_gate_text").value = xor;
+            document.getElementById("not_gate_text").value = not;
+        }
+    </script>
+
+    <input type="button" value="Submit" onclick="getValues()" />
+
+    <table style="width: 100%; height: 100%" border="1">
+        <tr>
+            <th colspan="3">
+                <h3><br />Logic Gates</h3>
+            </th>
+        </tr>
+        <th>Logic Gate</th>
+        <th>Result</th>
+        <tr>
+            <td>And Gate</td>
+            <td><textarea id="and_gate_text"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Nand Gate</td>
+            <td><textarea id="nand_gate_text"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Or Gate</td>
+            <td><textarea id="or_gate_text"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Nor Gate</td>
+            <td><textarea id="nor_gate_text"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Xor Gate</td>
+            <td><textarea id="xor_gate_text"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Not Gate</td>
+            <td><textarea id="not_gate_text"></textarea></td>
+        </tr>
+
+    </table>
+
+{% endblock %}

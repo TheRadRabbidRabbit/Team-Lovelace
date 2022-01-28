@@ -85,6 +85,10 @@ def errors():
 def support():
     return render_template("support.html")
 
+@app.route("/logic_gates")
+def logic_gates():
+    return render_template("Big Ideas/Big Idea 3/logicgates.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
