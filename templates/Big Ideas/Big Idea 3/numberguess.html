@@ -34,7 +34,8 @@
                 for (let i = 0; i < 7; i++) {
                     binarySearch()
                 }
-                document.getElementById("result").innerHTML = ("Congrats that was correct, it took " + attempts + " tries. Binary search took " + (computerAttempts) + " tries")
+                document.getElementById("result").innerHTML = ("Correct! You took " + attempts + " tries to find " +
+                    "the answer. Binary search took " + (computerAttempts) + " tries.")
             }
 
             if (playerValue < a){
@@ -69,9 +70,9 @@
     <div><p>Welcome to Gabe's Minigame</p></div>
     <div><p>This minigame relates to the College Board 3.11 topic: Binary Search. Binary search is a searching method used to locate
     an item in a sorted list that is faster than a linear search. It works by dividing the list in half, then searching the half with the
-    item by dividing it in half again until only the key word is left.</p></div>
+    item by dividing it in half again until only the key term is left.</p></div>
     <br><br>
-    <div><p>Try to guess the random number between 1-100 in as few guesses as possible! </p></div>
+    <div><p>Try to guess the random number between 1 and 100 in as few guesses as possible by using this method!</p></div>
     <div>
         <p id="result"></p>
     </div>

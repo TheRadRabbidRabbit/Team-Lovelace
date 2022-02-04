@@ -7,15 +7,14 @@
 {% endblock %}
 
 {% block content %}
-    <p>
-    Logical operators are often used in functions with Boolean expressions. Try exploring the different outputs by
-    checking the different boxes below!
-    </p>
+    <p>Logical operators are often used in functions with Boolean expressions. Try exploring the different outputs by
+    checking the different boxes below!</p>
+
     <!-- 2 inputs-->
-    <input type="checkbox" id="input1" name="input1" value="1" />
-    <label for="input1"> 1 </label><br />
-    <input type="checkbox" id="input2" name="input2" value="2" />
-    <label for="input2"> 2 </label><br />
+    <input type="checkbox" id="input1" name="input1" value="1"/>
+    <label for="input1"> 1 </label><br/>
+    <input type="checkbox" id="input2" name="input2" value="2"/>
+    <label for="input2"> 2 </label><br/>
 
     <script>
         console.log(document.getElementById("input1").checked);
@@ -25,7 +24,7 @@
 
             and = logic1 && logic2;
 
-            nand = !and ;
+            nand = !and;
 
             or = logic1 || logic2;
 
@@ -33,58 +32,67 @@
 
             xor = (logic1 && !logic2) || (!logic1 && logic2);
 
-            // not = !logic1;
-
-            // returning values
-            document.getElementById("and_gate_text").value = and;
-            document.getElementById("nand_gate_text").value = nand;
-            document.getElementById("or_gate_text").value = or;
-            document.getElementById("nor_gate_text").value = nor;
-            document.getElementById("xor_gate_text").value = xor;
-            // document.getElementById("not_gate_text").value = not;
+            // results
+            document.getElementById("and_gate").value = and;
+            document.getElementById("nand_gate").value = nand;
+            document.getElementById("or_gate").value = or;
+            document.getElementById("nor_gate").value = nor;
+            document.getElementById("xor_gate").value = xor;
         }
     </script>
 
-    <input type="button" value="Submit" onclick="getValues()" />
+    <input type="button" value="Submit" onclick="getValues()"/>
 
-    <table style="width: 100%; height: 100%" border="1">
+    <table style="width: 100%; height: 100%">
         <tr>
-            <th colspan="3">
-                <h3><br />Logic Gates</h3>
-            </th>
+            <th><h2>Logic Gate</h2></th>
+            <th><h2>Result</h2></th>
         </tr>
-        <th>Logic Gate</th>
-        <th>Result</th>
         <tr>
             <td>And Gate</td>
-            <td><textarea id="and_gate_text"></textarea></td>
+            <td><textarea id="and_gate"></textarea></td>
         </tr>
-
         <tr>
             <td>Nand Gate</td>
-            <td><textarea id="nand_gate_text"></textarea></td>
+            <td><textarea id="nand_gate"></textarea></td>
         </tr>
-
         <tr>
             <td>Or Gate</td>
-            <td><textarea id="or_gate_text"></textarea></td>
+            <td><textarea id="or_gate"></textarea></td>
         </tr>
-
         <tr>
             <td>Nor Gate</td>
-            <td><textarea id="nor_gate_text"></textarea></td>
+            <td><textarea id="nor_gate"></textarea></td>
         </tr>
-
         <tr>
             <td>Xor Gate</td>
-            <td><textarea id="xor_gate_text"></textarea></td>
+            <td><textarea id="xor_gate"></textarea></td>
         </tr>
+    </table>
 
-        <!-- <tr>
+    <input type="checkbox" id="input0" name="input0" value="0"/>
+    <label for="input0"> 1 </label><br/>
+
+    <script>
+
+        function notgate() {
+            console.log(document.getElementById("input0").checked);
+
+            logic0 = document.getElementById("input0").checked;
+
+            not = !logic0;
+            document.getElementById("not_gate").value = not;
+        }
+    </script>
+
+    <input type="button" value="Submit" onclick="notgate()"/><br>
+
+
+    <table style="width: 100%; height: 100%">
+        <tr>
             <td>Not Gate</td>
-            <td><textarea id="not_gate_text"></textarea></td>
-        </tr> -->
-
+            <td><textarea id="not_gate"></textarea></td>
+        </tr>
     </table>
 
 {% endblock %}
