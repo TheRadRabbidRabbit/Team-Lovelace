@@ -40,15 +40,43 @@ $theme-colors: (
 // redefine colors
 $primary: #5B9D82;
 $secondary: #a1a9bd;
-$body-bg: #C2DCFF;
+$body-bg: #CBF5F6;
+$btn-color: #8C52FF;
+$navbar-dark-color: #212529;
+$navbar-light-color: #f8f9fa;
+
+// Idea Background colors
+$Idea1-color: #C2DCFF;
+$Idea2-color: #FFD3D3;
+$Idea3-color: #DCD0F4;
+$Idea4-color: #E0F8F0;
+$Idea5-color: #F6D0E7;
+$support-color: #FAF0C6;
+
+
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "btn-color": $btn-color,
+        "navbar-dark-color": $navbar-dark-color,
+        "navbar-light-color": $navbar-light-color,
+        // Page background colors
+        "Idea1-bg": $Idea1-color,
+        "Idea2-bg": $Idea2-color,
+        "Idea3-bg": $Idea3-color,
+        "Idea4-bg": $Idea4-color,
+        "Idea5-bg": $Idea5-color,
+        "support-bg": $support-color,
+
+);
 
 // redefine body background
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // setup default background
 html, body {
-  background-image: var(--bs-gradient);
-  background-color: var(--bs-body-bg);
+  width: 100%;
 }
 
 .navbar{
@@ -58,17 +86,37 @@ html, body {
 // setup dark mode styling
 .dark-mode {
   $enable-gradients: true;
-
   /* redefine theme colors */
   $primary: $green-600;
   $secondary: #5c7ba8;
   $body-bg: #455a64;
+  $btn-color: #ffc900;
+  $Idea1-color: #8f7e6e;
+  $Idea2-color: #799191;
+  $Idea3-color: #8b8f7a;
+  $Idea4-color: #a8989d;
+  $Idea5-color: #7b9184;
+  $support-color: #7e859d;
+
+
+
   /* set background values */
   --#{$variable-prefix}body-bg: #{$body-bg};
 
   $theme-colors: (
           "primary": $primary,
-          "secondary": $secondary
+          "secondary": $secondary,
+          "btn-color": $btn-color,
+          "navbar-dark-color": $navbar-light-color,
+          "navbar-light-color": $navbar-dark-color,
+          // Page background colors
+          "Idea1-bg": $Idea1-color,
+          "Idea2-bg": $Idea2-color,
+          "Idea3-bg": $Idea3-color,
+          "Idea4-bg": $Idea4-color,
+          "Idea5-bg": $Idea5-color,
+          "support-bg": $support-color,
+
   );
   /* redefine theme color variables */
   @each $color, $value in $theme-colors {

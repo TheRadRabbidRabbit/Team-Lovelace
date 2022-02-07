@@ -11,9 +11,9 @@
 
 {% block content %}
     <style>
-        body {
-            background-color: #C2DCFF;
-        }
+        {#body {#}
+        {#    background-color: #C2DCFF;#}
+
 
         h2 {
             margin-top:25px;
@@ -41,19 +41,20 @@
             }
         }
     </script>
-    <div>
+<body class="container bg-Idea1-bg">
     <button onclick="myFunction()" style="background-color:#8C52FF;color:#FFFFFF;font-family: Roboto,serif; width:150px;height:40px; border-radius: 30px;border:0; margin-top:25px; margin-left:100px;">Essential Knowledge</button>
-        <video width="640" height="480" style="float: right;" controls>
-            <source src="https://drive.google.com/uc?export=view&id=1zCiKV9eRHNF3pv2QgZdwmiclc6-O4I_m" type="video/mp4">
-        </video>
-        <div id="EK">
-            <h3>Programs are developed with a specific purpose in mind.</h3>
-            <h3>There are multiple development processes. ex: -investigating and reflecting -designing -prototyping -testing.</h3>
-            <h3>Ways to fix errors: -debugging -print string -check the error messages -run each part of your code to find where the error was.</h3>
-            <h3>A development process that is incremental is one that breaks the problem into smaller pieces and makes sure each piece works before adding it to the whole.</h3>
-            <h3>Developers follow specific steps and stick to their plan.</h3>
-            <h3>Investigation is an important step in the process.</h3>
-            <h3>Developers design the program by： -brainstorming -storyboarding the program -planning user experience -laying out the user interface -organizing into modules -develop a testing strategy</h3>
-        </div>
+    <video width="640" height="480" style="float: right;" controls>
+        <source src="https://drive.google.com/uc?export=view&id=1zCiKV9eRHNF3pv2QgZdwmiclc6-O4I_m" type="video/mp4">
+    </video>
+    <div id="EK">
+        <h3>Programs are developed with a specific purpose in mind.</h3>
+        <h3>There are multiple development processes. ex: -investigating and reflecting -designing -prototyping -testing.</h3>
+        <h3>Ways to fix errors: -debugging -print string -check the error messages -run each part of your code to find where the error was.</h3>
+        <h3>A development process that is incremental is one that breaks the problem into smaller pieces and makes sure each piece works before adding it to the whole.</h3>
+        <h3>Developers follow specific steps and stick to their plan.</h3>
+        <h3>Investigation is an important step in the process.</h3>
+        <h3>Developers design the program by： -brainstorming -storyboarding the program -planning user experience -laying out the user interface -organizing into modules -develop a testing strategy</h3>
     </div>
+
+</body>
 {% endblock %}

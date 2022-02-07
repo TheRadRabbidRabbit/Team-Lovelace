@@ -16,18 +16,18 @@
 
         <!-- Common style for site -->
         {% block colors %}
-            <link rel="stylesheet" type="text/css" href={{  url_for("static", filename="scss/custom.css", version='208') }}>
+            <link rel="stylesheet" type="text/css" href={{  url_for("static", filename="scss/custom.css", version='219') }}>
         {% endblock %}
 
         <!-- Use this block for page specific metadata -->
         {% block meta %}
             <title>Team Lovelace</title>
         {% endblock %}
-
+        {% include "fragments/navbar.html" %}
     </head>
 
     <body>
-        {% include "fragments/navbar.html" %}
+
 
         <!-- CONTENT Block, utilize this block for page specific content  -->
         {% block content %}
