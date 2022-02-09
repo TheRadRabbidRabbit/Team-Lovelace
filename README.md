@@ -67,9 +67,13 @@ About pages, planning
 #### [Grading crossover team](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/57) (FOSSite)
 #### [Our grade](https://github.com/CalrethilOfMirkwood/FOSSite/issues/28)
 ### Week 8: 1/31-2/4
-#### Teams cross over, review tickets can be found [here](https://github.com/TheRadRabbidRabbit/Team-Lovelace/projects/1?card_filter_query=label%3A%22crossover+work%22)
+#### Teams cross over, review tickets can be found [here](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+label%3A%22crossover+work%22+)
+
 ## Create Task
+### Week 9: 2/7-2/11
 
 ## AP MCQ preparation
+### Week 10: 2/14-2/18
 
 ## Finals - PBL showing
+### Week 11: 2/28-3/4
