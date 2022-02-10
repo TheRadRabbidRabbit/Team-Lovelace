@@ -9,6 +9,11 @@
 5. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 6. [Sprint 3 - PBL Readiness](https://github.com/TheRadRabbidRabbit/Team-Lovelace#pbl-readiness---sprint-3)
 7. [Sprint 4 - Algorithms and Data](https://github.com/TheRadRabbidRabbit/Team-Lovelace#algorithms-and-data---sprint-4)
+8. [Week 6 - Midterm Vocabulary](https://github.com/TheRadRabbidRabbit/Team-Lovelace#midterm-vocab)
+9. [Sprint 7, 8 - Algorithms and Simulations](https://github.com/TheRadRabbidRabbit/Team-Lovelace#algorithms-and-simulations---sprint-7-8)
+10. [Week 9 - Create Task](https://github.com/TheRadRabbidRabbit/Team-Lovelace#create-task)
+11. [Week 10 - MCQ Final Exam](https://github.com/TheRadRabbidRabbit/Team-Lovelace#final-exam)
+12. [Week 11 - PBL Final Showing](https://github.com/TheRadRabbidRabbit/Team-Lovelace#finals---pbl-showing)
 
 ## Project Description
 
@@ -72,7 +77,7 @@ About pages, planning
 ## Create Task
 ### Week 9: 2/7-2/11
 
-## AP MCQ preparation
+## Final Exam
 ### Week 10: 2/14-2/18
 
 ## Finals - PBL showing
