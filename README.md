@@ -9,6 +9,11 @@
 5. [Sprint 1, 2 - Innovate](https://github.com/TheRadRabbidRabbit/Team-Lovelace#innovate---sprint-1-and-2)
 6. [Sprint 3 - PBL Readiness](https://github.com/TheRadRabbidRabbit/Team-Lovelace#pbl-readiness---sprint-3)
 7. [Sprint 4 - Algorithms and Data](https://github.com/TheRadRabbidRabbit/Team-Lovelace#algorithms-and-data---sprint-4)
+8. [Week 6 - Midterm Vocabulary](https://github.com/TheRadRabbidRabbit/Team-Lovelace#midterm-vocab)
+9. [Sprint 7, 8 - Algorithms and Simulations](https://github.com/TheRadRabbidRabbit/Team-Lovelace#algorithms-and-simulations---sprint-7-8)
+10. [Week 9 - Create Task](https://github.com/TheRadRabbidRabbit/Team-Lovelace#create-task)
+11. [Week 10 - MCQ Final Exam](https://github.com/TheRadRabbidRabbit/Team-Lovelace#final-exam)
+12. [Week 11 - PBL Final Showing](https://github.com/TheRadRabbidRabbit/Team-Lovelace#finals---pbl-showing)
 
 ## Project Description
 
@@ -36,6 +41,7 @@ Website Home Page -- image to be added later
 ## Organization - Sprint 0 
 ### Week 0: 11/15-11/19
 Established teams, tools, and platforms for communication
+
 ## Innovate - Sprint 1 and 2
 ### Week 1: 11/29-12/3
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/11)
@@ -43,11 +49,36 @@ Website planning and ideation (on wiki)
 ### Week 2: 12/6-12/10
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/24)
 About pages, planning 
+
 ## PBL Readiness - Sprint 3
 ### Week 3: 12/13-12/17
 #### [Review Ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/12)
 3 frontend screens: home page, collaboration, and creative development
+
 ## Algorithms and Data - Sprint 4
 ### Week 4: 1/3-1/7
 #### [Rebecca Su Review Ticket](https://github.com/Rebecca-123/csp_journal/issues/1)
 #### [Allie Xiao review ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/45)
+### Week 5: 1/10-1/14
+#### [PBL review ticket](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/52)
+
+## Midterm vocab
+### Week 6: 1/17-1/21
+#### [Rebecca's group](https://akhilnandhakumar.github.io/CSP-Midterm-Week-6/)
+#### [Allie, Tianbin, Justin](https://github.com/TianbinLiu/-Allie-Justin-Lemay-Tianbin-Midterm-review-vocab/wiki)
+
+## Algorithms and Simulations - Sprint 7, 8
+### Week 7: 1/24-1/28
+#### [Grading crossover team](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues/57) (FOSSite)
+#### [Our grade](https://github.com/CalrethilOfMirkwood/FOSSite/issues/28)
+### Week 8: 1/31-2/4
+#### Teams cross over, review tickets can be found [here](https://github.com/TheRadRabbidRabbit/Team-Lovelace/issues?q=is%3Aissue+label%3A%22crossover+work%22+)
+
+## Create Task
+### Week 9: 2/7-2/11
+
+## Final Exam
+### Week 10: 2/14-2/18
+
+## Finals - PBL showing
+### Week 11: 2/28-3/4

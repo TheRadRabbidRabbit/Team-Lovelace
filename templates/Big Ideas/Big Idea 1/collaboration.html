@@ -3,9 +3,6 @@
 
 {% block meta %}
     <title>1.1 Collaboration</title>
-{% endblock %}
-
-{% block content %}
     <style>
         /* CSS hover display code templated from Makitweb: https://makitweb.com/html-how-to-show-text-above-image-on-hover/*/
         {#body{#}
@@ -52,7 +49,10 @@
             opacity: 0.8;
         }
     </style>
-<body class="container bg-Idea1-bg">
+{% endblock %}
+
+{% block content %}
+    <body class="bg-Idea1-bg">
     <div>
         <h1>Big Idea 1: Collaboration</h1>
         <p>
@@ -69,7 +69,7 @@
             categories in their assigned row, then as a team we went through each column to decide which features to include.
         </div>
     </div>
-        <br>
+    <br>
 
     <div class="content_img img-fluid">
         <img src="static/assets/scrumboard.jpeg" width="75%" height="75%" alt="...">
@@ -88,5 +88,5 @@
             They are a great way to make sure that everyone is up to speed and understands what must be done by certain times.
         </div>
     </div>
-</body>
+    </body>
 {% endblock %}
