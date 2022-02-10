@@ -85,6 +85,14 @@ def errors():
 def support():
     return render_template("support.html")
 
+@app.route("/graph")
+def graph():
+    return render_template("Frontend/graph.html")
+
+@app.route("/snake")
+def snake():
+    return render_template("Frontend/snake.html")
+
 @app.route("/logic_gates")
 def logic_gates():
     return render_template("Big Ideas/Big Idea 3/logicgates.html")
