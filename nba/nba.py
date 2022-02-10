@@ -3,7 +3,7 @@ from flask import Blueprint, render_template
 nba = Blueprint('nba', __name__,
                 url_prefix='/nba',
                 template_folder='templates',
-                static_folder='nba/static',
+                static_folder='static',
                 static_url_path='assets')
 
 
