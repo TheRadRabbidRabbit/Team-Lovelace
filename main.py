@@ -3,9 +3,11 @@ from flask import render_template
 from __init__ import app
 from crud.app_crud import app_crud
 from crud.app_crud_api import app_crud_api
+from nba.nba import nba
 
 app.register_blueprint(app_crud)
 app.register_blueprint(app_crud_api)
+app.register_blueprint(nba)
 
 
 # home page accessed with http://127.0.0.1:5000/
@@ -84,6 +86,7 @@ def errors():
 @app.route("/support")
 def support():
     return render_template("support.html")
+
 
 @app.route("/logic_gates")
 def logic_gates():
