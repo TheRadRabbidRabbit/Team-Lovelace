@@ -6,24 +6,34 @@
 {% endblock %}
 
 {% block content %}
-    <img src="/nba/static/assets/nba.jpg" alt="NBA Logo">
-    <h1 style="display:inline">How Well Do You Know NBA Players and Teams?</h1>
-    <p>Note: This NBA Trivia Game was created as practice for the College Board Create Performance Task. This is an example of a program that students can develop for the exam.</p>
 
-    <div class="quiz">
-        <div class="question"></div>
-        <div class="answer">
+    <h1 style="padding:20px; font-family: Cambria,serif; text-align: center">How Well Do You Know NBA Players and Teams?</h1>
+    <p style="padding-left:20px; font-family: Cambria,serif">Note: This NBA Trivia Game was created as practice for the College Board Create Performance Task. This is an example of a program that students can develop for the exam.</p>
 
-        </div>
-        <div class="answer">
+    <h2 style="padding-left:20px; font-family: Cambria,serif">Welcome to the NBA Trivia Game! </h2>
+    <h3 style="padding-left:20px; font-family: Cambria,serif">To play this game, type the NBA teams that each of the following ten players are currently on. Once you submit all your answers, your results will be displayed. Good luck, and have fun!</h3><br>
 
-        </div>
-        <div class="answer">
+    <h2 style="padding-left:20px; font-family: Cambria,serif">Congratulations, you answered {{ result.score }} out of 5 questions correctly!</h2>
 
-        </div>
-        <div class="answer">
-
-        </div>
+    <div class="quiz" style="padding:20px; font-family: Cambria,serif;">
+        <p>Players</p>
+        <ol>
+            <li>Joel Embiid</li>
+            <li>LeBron James</li>
+            <li>Stephen Curry</li>
+            <li>Giannis Antetokounmpo</li>
+            <li>Luka Doncic</li>
+        </ol>
+        <p>Fill in the blanks below with the teams that the 5 NBA players above currently play for.</p>
+        <form action="{{ url_for('nba.trivia') }}" method="POST">
+            <!--Generate five different label and input elements within the form-->
+            {%  for i in range(1, 6) %}
+                <p>Question {{ i }}</p>
+                <!-- Labeling user input with ID of team and question number -->
+                <label for="team{{ i }}">Team:</label>
+                <input name="team{{ i }}" id="team{{ i }}" type="text"><br><br>
+            {% endfor %}
+            <input type="submit" value="Submit!">
+        </form>
     </div>
-
 {% endblock %}
