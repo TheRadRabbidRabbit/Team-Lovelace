@@ -83,14 +83,13 @@ def errors():
     return render_template("Big Ideas/Big Idea 1/errors.html")
 
 
-@app.route("/support")
-def support():
-    return render_template("support.html")
-
-
 @app.route("/logic_gates")
 def logic_gates():
     return render_template("Big Ideas/Big Idea 3/logicgates.html")
+
+@app.route("/hangman")
+def hangman():
+    return render_template("hangman.html")
 
 
 if __name__ == "__main__":
