@@ -87,6 +87,10 @@ def errors():
 def logic_gates():
     return render_template("Big Ideas/Big Idea 3/logicgates.html")
 
+@app.route("/gabeHangman")
+def gabeHangman():
+    return render_template("gabeHangman.html")
+
 @app.route("/hangman")
 def hangman():
     return render_template("hangman.html")
